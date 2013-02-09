@@ -1,69 +1,69 @@
 \documentclass{jsarticle}
-\title{$BEENO%7%9%F%`9)3XBh0l(B 2009$BG/EY2rEz(B}
+\title{電力システム工学第一 2009年度解答}
 \begin{document}
 \maketitle
-\section{$BLd(B1}
+\section{問1}
 \begin{itemize}
- \item [(1)]$BEENO7OE}$K8=$l$k2aEE05!J0[>oEE05!K$O$=$NH/@8860x$K$h$j!$30It2aEE05$HFbIt2aEE05$H$KJ,N`$5$l$k!#A0<T$O(B
-$BMkJ|EE8=>]$K5/0x$9$k$b$N$GMk2aEE05$H$b$$$o$l$k!#8e<T$O!$EE@~O)$N3+JDA`:nEy$KH<$&3+JD2aEE05$HCOMm;v(B
-$B8N;~Ey$KH/@8$9$kC;;~4V8rN.2aEE05$H$,$"$k!#(B
+ \item [(1)]電力系統に現れる過電圧（異常電圧）はその発生原因により，外部過電圧と内部過電圧とに分類される。前者は
+雷放電現象に起因するもので雷過電圧ともいわれる。後者は，電線路の開閉操作等に伴う開閉過電圧と地絡事
+故時等に発生する短時間交流過電圧とがある。
  \item [(2)]
 \begin{equation}
  U_{0}=\frac{500kV}{\sqrt{3}}\simeq 288kV
 \end{equation}
-$B3FAwEE@~$HBgCO$N4V$K$O@EEEMFNL$,B8:_$7!"Ey2A2sO)$r=q$/$H(B3$B$D$N@EEEMFNL$O(BY$B7k@~$H$J$C$F$=$NCf@-E@$,@\CO$5$l$?7A$H$J$k!#(B
-$B$h$C$F3F@~$NBPCOEE05$O@~4IEE05$N(B1/$\sqrt{3}$$B$H$J$k!#(B
+各送電線と大地の間には静電容量が存在し、等価回路を書くと3つの静電容量はY結線となってその中性点が接地された形となる。
+よって各線の対地電圧は線管電圧の1/$\sqrt{3}$となる。
 \item[(3)]
-$C_{1}+C_{2}$$B$r:G>.$K$9$k(BX$B$r5a$a$k!#(B
+$C_{1}+C_{2}$を最小にするXを求める。
 \begin{equation}
  C_{1}+C_{2}=\frac{8}{X-1}+0.5(X-1)^2+20
 \end{equation}
 \begin{equation}
 (C_{1}+C_{2})'=-\frac{8}{(X-1)^2}+X-1=\frac{1}{(X-1)^2}\{(X-3)(X^2+3)\}
 \end{equation}
-$B$3$l$h$j(BX=3$B$G:G>.$H$J$k$3$H$,J,$+$k$N$G!"(B
+これよりX=3で最小となることが分かるので、
 \begin{equation}
  U_{L}=X*U_{0}\simeq 866kV
 \end{equation}
 \item[(4)]
-X=3$B$rBeF~$7$?>e$G(B$C_{3}+C_{4}$$B$,:G>.$K$J$k(BY$B$r$b$H$a$k!#(B
+X=3を代入した上で$C_{3}+C_{4}$が最小になるYをもとめる。
 \begin{equation}
  C_{3}+C_{4}=\frac{8Y}{3-Y}+\frac{4Y}{3(Y-1)}
 \end{equation}
 \begin{equation}
  (C_{3}+C_{4})'=\frac{4}{3}\frac{1}{(Y-3)^2+(Y-1)^2}\{17Y^2-30Y+9\}
 \end{equation}
-$B$3$l$h$j(BY$\simeq$1.381$B$G:G>.$H$J$k$3$H$,J,$+$k$N$G!"(B$U_{R}=Y*U_{0}\simeq 399kV$
+これよりY$\simeq$1.381で最小となることが分かるので、$U_{R}=Y*U_{0}\simeq 399kV$
 \end{itemize}
-\section{$BLd(B2}
+\section{問2}
 \begin{itemize}
  \item [(1)]
-$BDjBV0BDjEY$O!">o;~$NIi2YJQF0$N$h$&$JHy>.>qMp$KBP$9$k0BDjEY$G!";~4VE*$K$O(B10$B?tIC0J>e$N8:>/$,BP>]!#$7$?$,$C$F!"DjBV0BDjEY$O!"7OE}$N(B
-$BDj>oE*$J1?E>>uBV$K$*$1$kJQ2=$KBP$9$k7OE}$N0BDj@-$K4X78$9$k!#(B\\
-$B2aEO0BDjEY$OBg$-$J>qMp$KBP$9$k0BDjEY$G!";~4VE*$K$O>qMpH/@8$+$i?tICDxEY$N;~4VNN0h$N8=>]$r$$$&!#2aEO0BDjEYLdBj$O!"EENO7OE}$K(B
-$BAwEE@~O)$N;v8N$dH/EE@_Hw$NC&Mn$N$h$&$JBg$-$J>qMp$,H/@8$9$k:]$K7OE}$,0BDj$K1?E>$r0];}$G$-$k$+H]$+$r7hDj$9$k$3$H$G$"$k!#(B
+定態安定度は、常時の負荷変動のような微小擾乱に対する安定度で、時間的には10数秒以上の減少が対象。したがって、定態安定度は、系統の
+定常的な運転状態における変化に対する系統の安定性に関係する。\\
+過渡安定度は大きな擾乱に対する安定度で、時間的には擾乱発生から数秒程度の時間領域の現象をいう。過渡安定度問題は、電力系統に
+送電線路の事故や発電設備の脱落のような大きな擾乱が発生する際に系統が安定に運転を維持できるか否かを決定することである。
  \item[(2)]
 \begin{itemize}
  \item [1,]
-$BAwEE@~$N%j%"%/%?%s%9$r>.$5$/$9$k$H!"(B
+送電線のリアクタンスを小さくすると、
        \begin{equation}
 	P_{max}=|\dot{E_{1}'}||\dot{E_{2}'}|/X
        \end{equation}
-       $B$h$j!"(B$P_{max}$$B$,Bg$-$/$J$k$N$G!"(B$A_{2}$$B$NLL@Q$,Bg$-$/$J$j!"0BDj2=$9$k!#(B
- \item [2,]$B9bB.%P%k%V@)8f(B\\
-       $B;v8NH/@88e!"C;;~4V$G%?!<%S%s$N>x5$N.F~J[$r5^JD$9$k$3$H$K$h$j!"5!3#E*F~NO$r9J$j9~$`!#?^$G$O5!3#E*F~NO$O0lDj$G$"$k$H9M$($F$$$k$,!"(B
-       $B$3$NF~NO$,2<B&$K%7%U%H$9$l$P!"2CB.%(%M%k%.!<!"$9$J$o$A(B$A_{1}$$B$NLL@Q$,>.$5$/$J$j!"0lJ}!"8:B.%(%M%k%.!<!"$9$J$o$A!"(B$A_{2}$$B$NLL@Q$,Bg$-$/$J$j!"(B
-       $B0BDj2=$7$d$9$/$J$k!#(B
- \item [3,]$BD6B.1~Ne<'(B\\
-       $B;v8NH/@88e!"C;;~4V$GM6F35/EENO(B$|\dot{E'}|$$B$rBg$-$/$9$k$N$G!"(B
+       より、$P_{max}$が大きくなるので、$A_{2}$の面積が大きくなり、安定化する。
+ \item [2,]高速バルブ制御\\
+       事故発生後、短時間でタービンの蒸気流入弁を急閉することにより、機械的入力を絞り込む。図では機械的入力は一定であると考えているが、
+       この入力が下側にシフトすれば、加速エネルギー、すなわち$A_{1}$の面積が小さくなり、一方、減速エネルギー、すなわち、$A_{2}$の面積が大きくなり、
+       安定化しやすくなる。
+ \item [3,]超速応励磁\\
+       事故発生後、短時間で誘導起電力$|\dot{E'}|$を大きくするので、
        \begin{equation}
 	P_{e}=P_{c}+P_{max}\sin(\delta - \gamma)
        \end{equation}
        \begin{equation}
 	P_{c}=|\dot{E_{1}'}|^{2}G_{11} \;\; P_{max} = |\dot{E_{1}'}||\dot{E_{2}'}||\dot{Y_{12}}|
        \end{equation}
-       $B>e$N<0$+$i!"EE5$=PNO(B$P_{e}$$B$rBg$-$/$9$k$3$H$,=PMh$k!#$3$l$K$h$j!"8:B.%(%M%k%.!<!"$9$J$o$A!"(B$A_{2}$$B$NLL@Q$rBg$-$/$9$k$3$H$,$G$-$k$N$G!"(B
-       $B0BDjEY$,8~>e$9$k!#(B
+       上の式から、電気出力$P_{e}$を大きくすることが出来る。これにより、減速エネルギー、すなわち、$A_{2}$の面積を大きくすることができるので、
+       安定度が向上する。
 \end{itemize}
 \end{itemize}
 \end{document}
