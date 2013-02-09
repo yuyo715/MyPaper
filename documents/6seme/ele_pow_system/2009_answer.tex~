@@ -1,0 +1,11 @@
+\documentclass{jsarticle}
+\title{電力システム工学第一 2009年度解答}
+\begin{document}
+\maketitle
+\section{問1}
+\begin{itemize}
+ \item [(1)]電力系統に現れる過電圧（異常電圧）はその発生原因により，外部過電圧と内部過電圧とに分類される。前者は
+雷放電現象に起因するもので雷過電圧ともいわれる。後者は，電線路の開閉操作等に伴う開閉過電圧と地絡事
+故時等に発生する短時間交流過電圧とがある。
+\end{itemize}
+\end{document}
